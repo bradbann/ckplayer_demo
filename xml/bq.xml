@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<player>
+	<flashvars>
+		{h->2}{defa->cq|bq|gq}{deft->720P|360P|480P}/xml/cq.xml
+	</flashvars>
+		<video>
+			<file><![CDATA[http://lxxtest.b0.upaiyun.com/%E9%80%A0%E7%89%A9%E5%B0%8F%E7%99%BE%E7%A7%91.mp4]]></file>
+			<size>32325203</size>
+			<seconds>200</seconds>
+		</video>
+	</player>

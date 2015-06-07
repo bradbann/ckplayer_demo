@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ckplayer简单调用演示</title>
+
+</head>
+
+<body>
+<div id="a1"></div>
+
+<script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+<script type="text/javascript">
+	// var flashvars={
+	// 	a:"cq_XODE3NDc2OTEy_youku",
+	// 	f:"/xml/[$pat].xml",
+	// 	c:0,
+	// 	b:1,
+	// 	h:4
+	// 	};
+		var flashvars={a:"cq",p:1,s:2,c:0,b:1,e:0,f:"/xml/[$pat].xml",h:4,
+		z:'',
+		k:'60|200',//提示点时间，如 30|60鼠标经过进度栏30秒，60秒会提示n指定的相应的文字
+		n:'这是提示点的功能，如果不需要删除k和n的值|提示点测试60秒',//提示点文字，跟k配合使用，如 提示点1|提示点2
+		my_url:encodeURIComponent(window.location.href)//本页面地址
+		};
+	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
+	CKobject.embedSWF('ckplayer/ckplayer.swf','a1','ckplayer_a1','600','400',flashvars,params);
+	/*
+	CKobject.embedSWF(播放器路径,容器id,播放器id/name,播放器宽,播放器高,flashvars的值,其它定义也可省略);
+	下面三行是调用html5播放器用到的
+	*/
+	var video=['http://lxxtest.b0.upaiyun.com/%E9%80%A0%E7%89%A9%E5%B0%8F%E7%99%BE%E7%A7%91.mp4->video/mp4'];
+	var support=['iPad','iPhone','ios','android'];
+	CKobject.embedHTML5('a1','ckplayer_a1',600,400,video,flashvars,support);
+	
+	
+	function closelights(){//关灯
+		alert(' 本演示不支持开关灯');
+	}
+	function openlights(){//开灯
+		alert(' 本演示不支持开关灯');
+	}
+  </script>
+</body>
+</html>
