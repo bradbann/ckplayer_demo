@@ -11,11 +11,19 @@
 
 <script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
 <script type="text/javascript">
-		var flashvars={a:"cq",p:1,s:2,c:0,b:1,e:0,f:"/xml/[$pat].xml",h:4,
-		z:'',
-		k:'60|200',//提示点时间，如 30|60鼠标经过进度栏30秒，60秒会提示n指定的相应的文字
-		n:'这是提示点的功能，如果不需要删除k和n的值|提示点测试60秒',//提示点文字，跟k配合使用，如 提示点1|提示点2
-		my_url:encodeURIComponent(window.location.href)//本页面地址
+		var flashvars={
+			a:"cq",
+			p:1,
+			s:2,
+			c:0,
+			b:1,
+			e:0,
+			f:"/xml/[$pat].xml",
+			h:4,
+			z:'',
+			k:'60|200',//提示点时间，如 30|60鼠标经过进度栏30秒，60秒会提示n指定的相应的文字
+			n:'这是提示点的功能，如果不需要删除k和n的值|提示点测试60秒',//提示点文字，跟k配合使用，如 提示点1|提示点2
+			my_url:encodeURIComponent(window.location.href)//本页面地址
 		};
 	var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always',wmode:'transparent'};
 	CKobject.embedSWF('ckplayer/ckplayer.swf','a1','ckplayer_a1','600','400',flashvars,params);
